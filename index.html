@@ -31,22 +31,46 @@
   	#hero{
   		height: 50vh;
   	}
+  	.section-title{
+  		padding: 0
+  	}
 	.portfolio #portfolio-flters{
 		margin:0;
 	}
-	.portfolio #portfolio-flters li:hover{
-		background: red;
+
+	.portfolio #portfolio-flters li {
+		background: rgba(155,155,155,.3);
+	}
+
+	.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
 		color: white;
+		background: red
 	}
 
 	#kat{
-		padding: 20px 0px
+		margin-bottom:  20px
 	}
-
-	.kategori-list ul li a, .kategori-list ul li a:hover, .kategori-list ul li a:visited, .kategori-list ul li a:focus, .kategori-list ul li a:active {
-		color: inherit;
+	@media (max-width: 995px) {
+		.kat-title {
+			text-align: center;
+		}
 	}
-
+	.portfolio .portfolio-item .portfolio-info{
+		opacity: 1;
+		position: absolute;
+		left: 30px;
+		right: 30px;
+		bottom: 20px;
+		z-index: 3;
+		background: rgba(255, 255, 255, 0.9);
+		padding: 15px;
+	}
+	.img-fluid{
+		border-radius: 5%
+	}
+	.img-fluid:hover{
+		opacity: .5
+	}
   </style>
   <!-- =======================================================
   * Template Name: Day - v4.7.0
@@ -73,11 +97,15 @@
     <section id="portfolio" class="portfolio">
       <div class="container">
 
+        <div class="section-title">
+          <h2>Kategori</h2>
+        </div>
+
         <div id="kat" class="row">
-          <div class="col-lg-3 d-flex"></div>
-          <div class="col-lg-6 d-flex justify-content-center kategori-list">
+          <div class="col-lg-3 "></div>
+          <div class="col-lg-6 justify-content-center kategori-list">
             <ul id="portfolio-flters">
-              <li data-filter="*">All</li>
+              <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">App</li>
               <li data-filter=".filter-card">Card</li>
               <li data-filter=".filter-web">Web</li>
@@ -86,20 +114,18 @@
           </div>
         </div>
 
-        <div id="app-list" class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
+        <div id="app-list" class="row justify-content-center portfolio-container" data-aos="fade-up" data-aos-delay="150">
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
+            <div class="portfolio-info text-center">
+              <h4>APELDESKEL</h4>
+              <p>Aplikasi ini memberikan semua layanan surat menyurat yang ada di wilayah Desa/Kelurahan</p>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
@@ -108,8 +134,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>App 2</h4>
               <p>App</p>
@@ -118,8 +144,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>Card 2</h4>
               <p>Card</p>
@@ -128,8 +154,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>Web 2</h4>
               <p>Web</p>
@@ -138,8 +164,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>App 3</h4>
               <p>App</p>
@@ -148,8 +174,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>Card 1</h4>
               <p>Card</p>
@@ -158,8 +184,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>Card 3</h4>
               <p>Card</p>
@@ -168,8 +194,8 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
+            <a href="https://google.com"><img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
               <h4>Web 3</h4>
               <p>Web</p>
