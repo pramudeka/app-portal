@@ -71,10 +71,10 @@
       offset -= 16
     }*/
     let offset = select('#kategori').offsetHeight //
-    let elementPos = select(el).offsetTop
-    console.log(offset+'-'+elementPos)
+    let elementPos = select('#kategori').offsetTop//select(el).offsetTop
+    console.log(elementPos + offset)
     window.scrollTo({
-      top: elementPos - offset,
+      top: elementPos /*+ offset*/,
       behavior: 'smooth'
     })
   }
@@ -85,7 +85,7 @@
     let nextElement = selsectKat.nextElementSibling
     const katFixed = () => {
       if ((katOffset - window.scrollY) <= 0) {
-      console.log('HOP')
+      console.log((katOffset - window.scrollY))
         selsectKat.classList.add('fixed-top')
         nextElement.classList.add('scrolled-offset')
       } else {
@@ -158,7 +158,6 @@
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
-      console.log(this.hash)
       let navbar = select('#kategori')/*
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
@@ -166,6 +165,7 @@
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }*/
+      console.log(this.hash)
       scrollto(this.hash)
     }
   }, true)
