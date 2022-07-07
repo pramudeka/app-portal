@@ -64,39 +64,57 @@
    * Scrolls to an element with header offset
    */
   const scrollto = (el) => {
-    let header = select('#header')
+    /*let header = select('#header')
     let offset = header.offsetHeight
 
     if (!header.classList.contains('header-scrolled')) {
       offset -= 16
-    }
-
+    }*/
+    let offset = select('#kategori').offsetHeight //
     let elementPos = select(el).offsetTop
+    console.log(offset+'-'+elementPos)
     window.scrollTo({
       top: elementPos - offset,
       behavior: 'smooth'
     })
   }
 
-  /**
-   * Header fixed top on scroll
-   */
-  let selectHeader = select('#header')
-  if (selectHeader) {
-    let headerOffset = selectHeader.offsetTop
-    let nextElement = selectHeader.nextElementSibling
-    const headerFixed = () => {
-      if ((headerOffset - window.scrollY) <= 0) {
-        selectHeader.classList.add('fixed-top')
+  let selsectKat = select('#kategori')
+  if (selsectKat) {
+    let katOffset = selsectKat.offsetTop
+    let nextElement = selsectKat.nextElementSibling
+    const katFixed = () => {
+      if ((katOffset - window.scrollY) <= 0) {
+        selsectKat.classList.add('fixed-top')
         nextElement.classList.add('scrolled-offset')
       } else {
-        selectHeader.classList.remove('fixed-top')
+        selsectKat.classList.remove('fixed-top')
         nextElement.classList.remove('scrolled-offset')
       }
     }
-    window.addEventListener('load', headerFixed)
-    onscroll(document, headerFixed)
+    window.addEventListener('load', katFixed)
+    onscroll(document, katFixed)
   }
+
+  /**
+   * Header fixed top on scroll
+   */
+  // let selectHeader = select('#header')
+  // if (selectHeader) {
+  //   let headerOffset = selectHeader.offsetTop
+  //   let nextElement = selectHeader.nextElementSibling
+  //   const headerFixed = () => {
+  //     if ((headerOffset - window.scrollY) <= 0) {
+  //       selectHeader.classList.add('fixed-top')
+  //       nextElement.classList.add('scrolled-offset')
+  //     } else {
+  //       selectHeader.classList.remove('fixed-top')
+  //       nextElement.classList.remove('scrolled-offset')
+  //     }
+  //   }
+  //   window.addEventListener('load', headerFixed)
+  //   onscroll(document, headerFixed)
+  // }
 
   /**
    * Back to top button
@@ -139,14 +157,14 @@
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
-
-      let navbar = select('#navbar')
+      console.log(this.hash)
+      let navbar = select('#kategori')/*
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
         let navbarToggle = select('.mobile-nav-toggle')
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
-      }
+      }*/
       scrollto(this.hash)
     }
   }, true)
