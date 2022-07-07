@@ -85,6 +85,7 @@
     let nextElement = selsectKat.nextElementSibling
     const katFixed = () => {
       if ((katOffset - window.scrollY) <= 0) {
+      console.log('HOP')
         selsectKat.classList.add('fixed-top')
         nextElement.classList.add('scrolled-offset')
       } else {
