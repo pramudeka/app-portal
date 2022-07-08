@@ -71,13 +71,8 @@
       offset -= 16
     }*/
     let offset = select('#kategori').offsetHeight //
-<<<<<<< HEAD
-    let elementPos = select(el).offsetTop
-    console.log(offset+'-'+elementPos)
-=======
     let elementPos = select('#kategori').offsetTop//select(el).offsetTop
     console.log(elementPos + offset)
->>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
     window.scrollTo({
       top: elementPos /*+ offset*/,
       behavior: 'smooth'
@@ -90,10 +85,7 @@
     let nextElement = selsectKat.nextElementSibling
     const katFixed = () => {
       if ((katOffset - window.scrollY) <= 0) {
-<<<<<<< HEAD
-=======
       console.log((katOffset - window.scrollY))
->>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
         selsectKat.classList.add('fixed-top')
         nextElement.classList.add('scrolled-offset')
       } else {
@@ -104,29 +96,6 @@
     window.addEventListener('load', katFixed)
     onscroll(document, katFixed)
   }
-<<<<<<< HEAD
-=======
-
-  /**
-   * Header fixed top on scroll
-   */
-  // let selectHeader = select('#header')
-  // if (selectHeader) {
-  //   let headerOffset = selectHeader.offsetTop
-  //   let nextElement = selectHeader.nextElementSibling
-  //   const headerFixed = () => {
-  //     if ((headerOffset - window.scrollY) <= 0) {
-  //       selectHeader.classList.add('fixed-top')
-  //       nextElement.classList.add('scrolled-offset')
-  //     } else {
-  //       selectHeader.classList.remove('fixed-top')
-  //       nextElement.classList.remove('scrolled-offset')
-  //     }
-  //   }
-  //   window.addEventListener('load', headerFixed)
-  //   onscroll(document, headerFixed)
-  // }
->>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
 
   /**
    * Header fixed top on scroll
@@ -189,10 +158,6 @@
   on('click', '.scrollto', function(e) {
     if (select(this.hash)) {
       e.preventDefault()
-<<<<<<< HEAD
-      console.log(this.hash)
-=======
->>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
       let navbar = select('#kategori')/*
       if (navbar.classList.contains('navbar-mobile')) {
         navbar.classList.remove('navbar-mobile')
@@ -200,10 +165,7 @@
         navbarToggle.classList.toggle('bi-list')
         navbarToggle.classList.toggle('bi-x')
       }*/
-<<<<<<< HEAD
-=======
       console.log(this.hash)
->>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
       scrollto(this.hash)
     }
   }, true)
