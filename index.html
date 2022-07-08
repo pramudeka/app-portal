@@ -31,6 +31,7 @@
   	#hero{
   		height: 50vh;
   	}
+<<<<<<< HEAD
 	.portfolio #portfolio-flters{
 		margin:0;
 	}
@@ -48,6 +49,57 @@
 		color: inherit;
 	}
 
+=======
+  	.section-title{
+  		padding: 0
+  	}
+  	.portfolio{
+  		background: url("assets/img/blue-bg.jpg") top center;
+  	}
+	.portfolio #portfolio-flters{
+		margin:0;
+	}
+
+	.portfolio #portfolio-flters li {
+		background: rgba(155,155,155,.3);
+	}
+
+	.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+		color: white;
+		background: red
+	}
+
+	#kat{
+		margin-bottom:  20px
+	}
+	@media (max-width: 995px) {
+		.kat-title {
+			text-align: center;
+		}
+	}
+	.portfolio .portfolio-item .portfolio-info{
+		opacity: 1;
+		position: absolute;
+		left: 30px;
+		right: 30px;
+		bottom: 20px;
+		z-index: 3;
+		background: rgba(255, 255, 255, 0.4);
+		padding: 15px;
+	}
+	.portfolio .portfolio-item .portfolio-info h4{
+		font-size: 8pt;
+	}
+	.portfolio .portfolio-item .portfolio-info p{
+		font-size: 8pt;
+	}
+	.img-fluid{
+		border-radius: 5%
+	}
+	.img-fluid:hover{
+		opacity: .5
+	}
+>>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
   </style>
   <!-- =======================================================
   * Template Name: Day - v4.7.0
@@ -74,6 +126,7 @@
     <section id="portfolio" class="portfolio">
       <div class="container">
 
+<<<<<<< HEAD
         <div id="kategori" class="row">
           <div class="col-lg-3 d-flex"></div>
           <div class="col-lg-6 d-flex justify-content-center kategori-list">
@@ -87,10 +140,25 @@
               <li data-filter=".filter-web"><a class="scrollto" href="#app-web">Web</a></li>
               <li data-filter=".filter-web"><a class="scrollto" href="#app-web">Web</a></li>
               <li data-filter=".filter-web"><a class="scrollto" href="#app-web">Web</a></li>
+=======
+        <div class="section-title">
+          <h2>Kategori</h2>
+        </div>
+
+        <div id="kat" class="row">
+          <div class="col-lg-3 "></div>
+          <div class="col-lg-6 justify-content-center kategori-list">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-card">Card</li>
+              <li data-filter=".filter-web">Web</li>
+>>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
             </ul>
           </div>
         </div>
 
+<<<<<<< HEAD
         <div id="app-list" class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
@@ -181,6 +249,38 @@
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
+=======
+        <div id="app-list" class="row justify-content-center portfolio-container" data-aos="fade-up" data-aos-delay="150">
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-app">
+            <a href="https://google.com">
+            	<img src="assets/img/icon/ikon portals-01.jpg" class="img-fluid" alt="">
+	            <div class="portfolio-info text-center">
+	              <h4>APELDESKEL</h4>
+	              <p>Aplikasi ini memberikan semua layanan surat menyurat yang ada di wilayah Desa/Kelurahan</p>
+	            </div>
+	        </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-web">
+            <a href="https://google.com">
+            	<img src="assets/img/icon/ikon portals-02.jpg" class="img-fluid" alt="">
+	            <div class="portfolio-info text-center">
+	              <h4>GOOGLE MAIL</h4>
+	              <p>Layanan milik Google yang mneyajikan surat menyurat secara elektronik (e-mail)</p>
+	            </div>
+	        </a>
+          </div>
+
+          <div class="col-lg-3 col-md-4 portfolio-item filter-card">
+            <a href="https://google.com">
+            	<img src="assets/img/icon/ikon portals-03.jpg" class="img-fluid" alt="">
+	            <div class="portfolio-info text-center">
+	              <h4>YAHOO MAIL</h4>
+	              <p>Layanan milik Yahoo yang mneyajikan surat menyurat secara elektronik (e-mail)</p>
+	            </div>
+	        </a>
+>>>>>>> 410647a83d4ee04496dfed22cc787db5b517f8d6
           </div>
 
         </div>
