@@ -9,6 +9,7 @@
 
   $(function () {
     // bind filter button click
+
     $('#portfolio-flters li').on( 'click', function() {
       var filterValue = $( this ).data('filter');
       $('#portfolio-flters li').removeClass('filter-active');
@@ -27,4 +28,14 @@
         });
     });
 
+    $(this).scroll(function () {
+      if ($(this).scrollTop()>200) {
+        $('.back-to-top').addClass('active').fadeIn('slow')
+      }else{
+        $('.back-to-top').removeClass('active').fadeOut('slow')
+      }
+    })
+    $('.back-to-top').on('click',function(){
+      $(this).scrollTop(0)
+    })
   })
