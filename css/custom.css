@@ -4,14 +4,19 @@ body {
 }
 .section-heading{
     color: #fff;
+    font-size: medium;
+    padding-top: 10px;
+}
+.kat{
+    background: rgba(0, 0, 0, 0.6);
 }
 .logo-header{
-    margin-bottom: 30px;
-    max-width: 80%;
+    /*margin-bottom: 30px;*/
+    max-width: 50%;
 }
 @media(max-width: 1400px){
     .logo-header{
-        margin-bottom: 50px;
+        /*margin-bottom: 50px;*/
         max-width: 100%;
     }
 }
@@ -19,11 +24,12 @@ body {
     width: 100%;
     background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bg-portal.jpg") fixed center center;
     background-size: cover;
+    padding: 0;
 }
 #portfolio #portfolio-flters{
     margin:0;
     list-style-type: none;
-    padding: 50px 0px;
+    padding: 10px 0px;
     overflow: hidden;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -69,7 +75,7 @@ body {
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-size: 10pt;
-    color: #999;
+    color: #aaa;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     background: rgba(130, 130, 130, 0.4);
