@@ -2,6 +2,11 @@ html,
 body {
   height: 100%;
 }
+@media(max-width: 768px){
+  .row > * {
+    width: 50%;
+  }
+}
 .section-heading{
     color: #fff;
     font-size: medium;
@@ -14,7 +19,7 @@ body {
     /*margin-bottom: 30px;*/
     max-width: 50%;
 }
-@media(max-width: 1400px){
+@media(max-width: 1399.8px){
     .logo-header{
         /*margin-bottom: 50px;*/
         max-width: 100%;
