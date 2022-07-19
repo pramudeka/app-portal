@@ -35,6 +35,7 @@
         $('.back-to-top').removeClass('active').fadeOut('slow')
       }
     })
+    
     $('.back-to-top').on('click',function(){
       $(this).scrollTop(0)
     })
