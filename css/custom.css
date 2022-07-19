@@ -22,7 +22,7 @@ body {
 @media(max-width: 1399.8px){
     .logo-header{
         /*margin-bottom: 50px;*/
-        max-width: 100%;
+        max-width: 70%;
     }
 }
 #portfolio{
