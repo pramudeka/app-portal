@@ -99,11 +99,7 @@ body {
 } 
 .popover-body{
   text-align: center;
-<<<<<<< HEAD
-  color: #aaa;
-=======
   color: #7b7b7b;
->>>>>>> 483c783d45d0413e2175adaf088a14b4c0b3a6b2
   font-size: 10pt;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
