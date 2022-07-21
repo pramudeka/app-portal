@@ -9,6 +9,7 @@
 
   $(function () {
     // bind filter button click
+    $('[data-bs-toggle="popover"]').popover(); 
 
     $('#portfolio-flters li').on( 'click', function() {
       var filterValue = $( this ).data('filter');

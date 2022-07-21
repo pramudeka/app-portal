@@ -76,6 +76,12 @@ body {
       font-size: 12px;
     }
 }
+
+#portfolio .portfolio-item{
+    margin-left: unset;
+    margin-right: unset;
+}
+
 #portfolio .portfolio-item .portfolio-caption{
     padding: 10px;
     background: rgba(255,255,255,0);
@@ -87,6 +93,22 @@ body {
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
     font-size: 10pt;
     color: #aaa;
+}
+.popover{
+  border-radius: 10px;
+} 
+.popover-body{
+  text-align: center;
+  color: #aaa;
+  font-size: 10pt;
+  font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.info-bt{
+  color: #fff;
+  font-size: 14pt;
+}
+.info-bt:hover{
+  color: rgba(6, 222, 245, 0.7);
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
     background: rgba(130, 130, 130, 0.4);
