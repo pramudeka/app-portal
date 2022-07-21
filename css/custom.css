@@ -2,7 +2,7 @@ html,
 body {
   height: 100%;
 }
-@media(max-width: 768px){
+@media(max-width: 576px){
   .row > * {
     width: 50%;
   }
@@ -71,9 +71,9 @@ body {
     color: red;
     font-weight: bold;
 }
-@media(max-width: 576px){
+@media(max-width: 768px){
     #portfolio #portfolio-flters li{
-      font-size: 12px;
+      font-size: 10px;
     }
 }
 
@@ -104,11 +104,16 @@ body {
 .popover .popover-body{
   background: #3edaea;
   border-radius: 10px;
-  max-width: 150px;
+  max-width: 180px;
   text-align: center;
   color: #262626;
   font-size: 10pt;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+@media(max-width:768px){
+  .popover .popover-body{
+    max-width: 150px;
+  }
 }
 .info-bt{
   color: #fff;
