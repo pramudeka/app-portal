@@ -8,8 +8,21 @@
 // 
 
   $(function () {
-    // bind filter button click
-    $('[data-bs-toggle="popover"]').popover(); 
+
+    $('.info-bt').each(function(e){
+      $(this).attr('data-bs-content',$(this).next().attr('class','portfolio-caption-subheading').text())
+    })
+
+    setTimeout(function() {
+      var popoverTriggerList = [].slice.call(document.querySelectorAll('.info-bt'))
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl,{
+          trigger: 'focus',
+          //content: '-',
+          placement: 'top'
+        })
+      })
+    },1000);
 
     $('#portfolio-flters li').on( 'click', function() {
       var filterValue = $( this ).data('filter');

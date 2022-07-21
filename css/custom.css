@@ -95,11 +95,18 @@ body {
     color: #aaa;
 }
 .popover{
+  background: rgba(0,0,0,0);
+  border: rgba(0,0,0,0);
+}
+.popover .popover-arrow{
+  display: none;
+}
+.popover .popover-body{
+  background: #3edaea;
   border-radius: 10px;
-} 
-.popover-body{
+  max-width: 180px;
   text-align: center;
-  color: #7b7b7b;
+  color: #262626;
   font-size: 10pt;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
