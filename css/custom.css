@@ -1,6 +1,7 @@
 html,
 body {
   height: 100%;
+  background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bg-portal.jpg") fixed center center;
 }
 @media(max-width: 576px){
   .row > * {
@@ -30,18 +31,13 @@ body {
 }
 #portfolio{
     width: 100%;
-    background: linear-gradient(rgba(12, 12, 12, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/bg-portal.jpg") fixed center center;
-    background-size: cover;
+    background-size: auto;
     padding: 0;
 }
 #portfolio #portfolio-flters{
     margin:0;
     list-style-type: none;
     padding: 10px 0px;
-    overflow: hidden;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
 }
 
 #portfolio #portfolio-flters li {
@@ -71,12 +67,6 @@ body {
     color: red;
     font-weight: bold;
 }
-@media(max-width: 768px){
-    #portfolio #portfolio-flters li{
-      font-size: 10px;
-    }
-}
-
 #portfolio .portfolio-item{
     margin-left: unset;
     margin-right: unset;
@@ -110,10 +100,20 @@ body {
   font-size: 10pt;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-@media(max-width:768px){
-  .popover .popover-body{
-    max-width: 150px;
-  }
+@media(max-width: 768px){
+    #portfolio #portfolio-flters li{
+      font-size: 10px;
+    }
+    .sticky-top{
+      position: inherit;
+    }
+    #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
+        font-size: 8pt;
+    }
+    .popover .popover-body{
+        max-width: 150px;
+        font-size: 8pt;
+    }
 }
 .info-bt{
   color: #fff;
