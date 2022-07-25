@@ -30,6 +30,7 @@ hr {
   margin: 0;
   padding: 0px 20px;
   border-radius: 5px;
+  opacity: inherit;
 }
 .logo-header{
     max-width: 50%;
