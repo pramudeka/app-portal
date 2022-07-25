@@ -72,8 +72,12 @@ hr {
     transition: all 0.1s ease-in-out;
     font-family:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#portfolio #portfolio-flters .filter-active , #portfolio #portfolio-flters li:hover {
-    background: red;
+#portfolio #portfolio-flters .filter-active{
+    background: #a416cc;
+    color: white;
+  }
+#portfolio #portfolio-flters li:hover {
+    background: #3edaea;
     color: white;
 }
 #portfolio .portfolio-item{
