@@ -1,7 +1,7 @@
 html,
 body {
   min-height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0.53)), url("../assets/img/bg-portal.jpg") fixed center center;
+  background: linear-gradient(to right, rgba(8, 7, 41, 0.7), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2), rgba(8, 7, 41, 0.7)), url("../assets/img/bg-portal.jpg") fixed center center;
   background-size: cover;
 }
 @media(max-width: 576px){
@@ -12,14 +12,18 @@ body {
 .section-heading{
     color: #fff;
     font-size: medium;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 .kat{
-    background: rgba(0, 0, 0, 0.6);
+    background: linear-gradient(rgb(36, 61, 125),rgba(36, 61, 125,.7),rgba(36, 61, 125,.5),rgba(0,0,0,.1));
     padding-top: 20px;
+    padding-bottom: 50px;
 }
 .headers {
-  background: rgba(0, 0, 0, 0.6);
+  /*background: rgba(0, 0, 0, 0.6);*/
+  background: url("../assets/img/bg-logo-header.jpg");
+  background-size: contain;
+
 }
 hr {
   border: solid 2px white;
@@ -52,7 +56,7 @@ hr {
 }
 
 #portfolio #portfolio-flters li {
-    background: rgb(249, 255, 254);
+    background: white;
     margin: 0 auto 25px auto;
     border-radius: 5px;
     list-style: none;
@@ -60,23 +64,17 @@ hr {
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    color: #444444;
     margin-bottom: 5px;
     transition: all 0.1s ease-in-out;
     font-family:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#portfolio #portfolio-flters li:hover {
-    color: white;
-    font-weight: bold;
+#portfolio #portfolio-flters .filter-active , #portfolio #portfolio-flters li:hover {
     background: red;
-}
-#portfolio #portfolio-flters .filter-active {
-    color: red;
-    font-weight: bold;
+    color: white;
 }
 #portfolio .portfolio-item{
     margin-left: unset;
@@ -134,10 +132,13 @@ hr {
   color: rgba(6, 222, 245, 0.7);
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
-    background: rgba(130, 130, 130, 0.4);
+    background: rgba(255,255,255, 0.4);
 }
 .portfolio-link .img-fluid, .portfolio-link .portfolio-hover{
     border-radius: 20px;
+  }
+.portfolio-link .portfolio-hover{
+    box-shadow: 0px 0px 10px white;
 }
 .back-to-top {
   position: fixed;
@@ -175,7 +176,7 @@ hr {
   line-height: 0;
 }
 .survey:hover {
-  background: #03bfae;
+  background: #3edaea;
   color: #fff;
 }
 .footer{
