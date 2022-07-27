@@ -21,7 +21,7 @@ body {
     background: rgba(36, 61, 125,.99);
     /*padding-top: 20px;*/
     margin-bottom: 50px;
-    border-bottom: solid 15px rgba(255, 255, 255, 0.45)
+    border-bottom: solid 10px rgba(255, 255, 255, 0.45)
 }
 .headers {
   /*background: rgba(0, 0, 0, 0.6);*/
@@ -32,21 +32,23 @@ body {
 .mini-headers{
     display: none;
     overflow: hidden;
-    padding: 10px 0px;
+    padding: 10px 10px;
     background: rgba(36, 61, 125,1);
-    text-align: right;
     color: #fff;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.mini-headers .mini-logo{
-    padding: 5px;
+.mini-headers .header-title{
+    cursor: default;
+    vertical-align: middle;
 }
-.mini-headers .mini-logo img{
-    max-height: 25px;
+.mini-headers img{
+    height: 20px;
 }
 a.icon{
     color: #fff;
-    padding: 10px 12px;
+    float: right;
+    padding: 0 5px;
+    display: block;
 }
 a.icon:hover{
     background: rgba(16, 41, 105,1);
@@ -128,6 +130,7 @@ ul#portfolio-flters{
 .popover{
   background: rgba(0,0,0,0);
   border: rgba(0,0,0,0);
+  z-index: 900;
 }
 .popover .popover-arrow{
   display: none;
@@ -141,7 +144,7 @@ ul#portfolio-flters{
   font-size: 10pt;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-@media(max-width: 768px) or (orientation: portrait){
+@media(max-width: 768px)/* or (orientation: portrait)*/{
     /*.sticky-top{
       position: inherit;
     }*/
