@@ -32,21 +32,21 @@ body {
 .mini-headers{
     display: none;
     overflow: hidden;
-    padding: 10px 0px;
+    padding: 10px 10px;
     background: rgba(36, 61, 125,1);
-    text-align: right;
     color: #fff;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.mini-headers .mini-logo{
-    padding: 5px;
+.mini-headers .header-title{
+    cursor: default;
 }
-.mini-headers .mini-logo img{
-    max-height: 25px;
+.mini-headers img{
+    object-fit: cover;
+    height: 20px;
 }
 a.icon{
     color: #fff;
-    padding: 10px 12px;
+    float: right;
 }
 a.icon:hover{
     background: rgba(16, 41, 105,1);
