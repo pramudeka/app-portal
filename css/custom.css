@@ -155,7 +155,7 @@ ul#portfolio-flters{
         display: none;
     }
     ul#portfolio-flters.active{
-        display: block;
+        display: block; 
     }
     #portfolio #portfolio-flters li{
       font-size: 10px;
