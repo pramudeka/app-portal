@@ -12,12 +12,16 @@ body {
 .section-heading{
     color: #fff;
     font-size: medium;
-    padding-top: 30px;
+    font-weight: bold;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*padding-top: 30px;*/
+    padding: 10px 20px;
 }
 .kat{
-    background: linear-gradient(rgb(36, 61, 125),rgba(36, 61, 125,.7),rgba(36, 61, 125,.5),rgba(0,0,0,.1));
-    padding-top: 20px;
-    padding-bottom: 50px;
+    background: rgba(36, 61, 125,.99);
+    /*padding-top: 20px;*/
+    margin-bottom: 50px;
+    border-bottom: solid 15px rgba(255, 255, 255, 0.45)
 }
 .headers {
   /*background: rgba(0, 0, 0, 0.6);*/
@@ -25,11 +29,34 @@ body {
   background-size: contain;
 
 }
+.mini-headers{
+    display: none;
+    overflow: hidden;
+    padding: 10px 0px;
+    background: rgba(36, 61, 125,1);
+    text-align: right;
+    color: #fff;
+    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.mini-headers .mini-logo{
+    padding: 5px;
+}
+.mini-headers .mini-logo img{
+    max-height: 25px;
+}
+a.icon{
+    color: #fff;
+    padding: 10px 12px;
+}
+a.icon:hover{
+    background: rgba(16, 41, 105,1);
+}
 hr {
   border: solid 2px white;
   margin: 0;
   padding: 0px 20px;
   border-radius: 5px;
+  opacity: inherit;
 }
 .logo-header{
     max-width: 50%;
@@ -49,34 +76,35 @@ hr {
     background-size: auto;
     padding: 0;
 }
-#portfolio #portfolio-flters{
+ul#portfolio-flters{
+    display: block;
     margin:0;
     list-style-type: none;
     padding: 10px 0px;
 }
 
-#portfolio #portfolio-flters li {
+#portfolio-flters li {
     background: white;
-    margin: 0 auto 25px auto;
+    margin: 5px auto 25px auto;
     border-radius: 5px;
     list-style: none;
     text-align: center;
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     transition: all 0.1s ease-in-out;
     font-family:  "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-#portfolio #portfolio-flters .filter-active{
+#portfolio-flters .filter-active{
     background: #a416cc;
     color: white;
   }
-#portfolio #portfolio-flters li:hover {
+#portfolio-flters li:hover {
     background: #3edaea;
     color: white;
 }
@@ -86,7 +114,7 @@ hr {
 }
 
 #portfolio .portfolio-item .portfolio-caption{
-    padding: 10px;
+    padding: 8px;
     background: rgba(255,255,255,0);
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
@@ -113,12 +141,28 @@ hr {
   font-size: 10pt;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-@media(max-width: 768px){
+@media(max-width: 768px) or (orientation: portrait){
+    /*.sticky-top{
+      position: inherit;
+    }*/
+    .headers{
+        display: none;
+    }
+    .section-heading{
+        display: none;
+    }
+    .mini-headers{
+        display: block;
+    }
+    ul#portfolio-flters{
+        display: none;
+    }
+    ul#portfolio-flters.active{
+        display: block;
+    }
     #portfolio #portfolio-flters li{
       font-size: 10px;
-    }
-    .sticky-top{
-      position: inherit;
+      padding: 5px 7.5px;
     }
     #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
         font-size: 8pt;
