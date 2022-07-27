@@ -9,6 +9,14 @@
 
   $(function () {
 
+    $('a.icon').on('click',function(){
+      if($('#portfolio-flters').hasClass('active')){
+        $('#portfolio-flters').removeClass('active')
+      }else{
+        $('#portfolio-flters').addClass('active')
+      }
+    })
+
     setTimeout(function() {
       var popoverTriggerList = [].slice.call(document.querySelectorAll('.info-bt'))
       var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
