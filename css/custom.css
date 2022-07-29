@@ -95,7 +95,7 @@ ul#portfolio-flters{
     cursor: pointer;
     display: inline-block;
     padding: 10px 15px;
-    font-size: 12px;
+    font-size: .8em;
     font-weight: 500;
     line-height: 1;
     text-transform: uppercase;
@@ -121,11 +121,11 @@ ul#portfolio-flters{
     background: rgba(255,255,255,0);
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-    font-size: 12pt;
+    font-size: 1em;
     color: #fff;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-    font-size: 10pt;
+    font-size: .8em;
     color: #aaa;
 }
 .popover{
@@ -142,7 +142,7 @@ ul#portfolio-flters{
   max-width: 180px;
   text-align: center;
   color: #262626;
-  font-size: 10pt;
+  font-size: .8em;
   font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 @media(max-width: 768px)/* or (orientation: portrait)*/{
@@ -165,20 +165,20 @@ ul#portfolio-flters{
         display: block;
     }
     #portfolio #portfolio-flters li{
-      font-size: 10px;
+      font-size: .6em;
       padding: 5px 7.5px;
     }
     #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-        font-size: 8pt;
+        font-size: .8em;
     }
     .popover .popover-body{
         max-width: 150px;
-        font-size: 8pt;
+        font-size: .8em;
     }
 }
 .info-bt{
   color: #fff;
-  font-size: 14pt;
+  font-size: 1.5em;
 }
 .info-bt:hover{
   color: rgba(6, 222, 245, 0.7);
@@ -207,7 +207,7 @@ ul#portfolio-flters{
   border-radius: 50%
 }
 .back-to-top i {
-  font-size: 28px;
+  font-size: 6em;
   line-height: 0;
 }
 .back-to-top:hover {
@@ -221,10 +221,10 @@ ul#portfolio-flters{
 .survey {
   background: #a416cc;
   color: #fff;
-  font-size: 9pt;
+  font-size: .8em;
 }
 .survey i {
-  font-size: 28px;
+  font-size: 6em
   line-height: 0;
 }
 .survey:hover {
